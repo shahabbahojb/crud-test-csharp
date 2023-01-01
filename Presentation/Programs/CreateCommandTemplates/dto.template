@@ -1,0 +1,6 @@
+namespace Application.[commandNamespace].[commandName]
+{
+    public class [commandDtoName]
+    {
+    }
+}

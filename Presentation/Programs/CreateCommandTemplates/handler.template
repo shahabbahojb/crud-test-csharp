@@ -1,0 +1,24 @@
+using System;
+using System.Threading;
+using System.Threading.Tasks;
+using Application.Common;[stdResponseImport][validationImport][paginationImport]
+using Microsoft.AspNetCore.Http;
+using Application.Common.Validation.service;
+using Infrastructure;
+
+namespace Application.[commandNamespace].[commandName]
+{
+    public class [commandName]CommandHandler : AbstractRequestHandler<[commandName]Command, [stdResponseStart][paginationStart][commandDtoName][paginationEnd][stdResponseEnd]>
+    {
+        public [commandName]CommandHandler(AppDbContext dbContext, IHttpContextAccessor httpContextAccessor,IServiceProvider serviceProvider,IValidationService validationService)
+            : base(dbContext, httpContextAccessor,serviceProvider,validationService)
+        {
+        }
+
+        public override async Task<[stdResponseStart][paginationStart][commandDtoName][paginationEnd][stdResponseEnd]> Handle([commandName]Command request, CancellationToken _)
+        {
+            [validation]
+            return null;
+        }
+    }
+}

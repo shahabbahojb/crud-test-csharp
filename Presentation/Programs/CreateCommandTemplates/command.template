@@ -1,0 +1,9 @@
+using Application.Common.Response;[paginationImport]
+using MediatR;
+
+namespace Application.[commandNamespace].[commandName]
+{
+    public class [commandName]Command : IRequest<[stdResponseStart][paginationStart][commandDtoName][paginationEnd][stdResponseEnd]>
+    {
+    }
+}

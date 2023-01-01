@@ -1,0 +1,6 @@
+namespace Application.[queryNamespace].[queryName]
+{
+    public class [queryDtoName]
+    {
+    }
+}

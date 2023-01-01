@@ -1,0 +1,15 @@
+using Application.Common.Validation;
+using Application.Common.Validation.service;
+using Infrastructure;
+
+namespace Application.[commandNamespace].[commandName]
+{
+    public class [commandName]CommandValidator : Validator<[commandName]Command, AppDbContext>
+    {
+        private readonly IValidationService _validationService;
+        public [commandName]CommandValidator(IValidationService validationService,AppDbContext context = null) : base(context)
+        {
+           _validationService = validationService;
+        }
+    }
+}

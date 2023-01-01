@@ -1,0 +1,16 @@
+using Application.Common.Validation;
+using Infrastructure;
+using Application.Common.Validation.service;
+
+
+namespace Application.[queryNamespace].[queryName]
+{
+    public class [queryName]QueryValidator : Validator<[queryName]Query, AppDbContext>
+    {
+        private readonly IValidationService _validationService;
+        public [queryName]QueryValidator(IValidationService validationService,AppDbContext context = null) : base(context)
+        {
+           _validationService = validationService;
+        }
+    }
+}
