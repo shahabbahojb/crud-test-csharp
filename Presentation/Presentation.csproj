@@ -23,7 +23,6 @@
     </ItemGroup>
 
     <ItemGroup>
-      <None Remove="Dockerfile" />
       <None Remove=".dockerignore" />
     </ItemGroup>
 
